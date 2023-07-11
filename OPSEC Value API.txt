@@ -1,0 +1,65 @@
+OPSEC Value API
+
+This section describes each of the OPSEC value API functions. 
+
+opsec_value_create
+opsec_value_create initializes an OPSEC value.
+Prototype
+opsec_value_t * opsec_value_create();
+
+
+Return Values
+A pointer to the new OPSEC value if successful. NULL otherwise.
+opsec_value_dest
+opsec_value_dest destroys an OPSEC value.
+Prototype 
+void opsec_value_dest (opsec_value_t *val);
+
+opsec_value_dup
+opsec_value_dup duplicates an existing OPSEC value.
+Prototype
+opsec_value_t * opsec_value_dup (const opsec_value_t *val);
+
+
+Value types                  C type
+
+OPSEC_VT_INT                 int 
+OPSEC_VT_UINT                int 
+OPSEC_VT_I8BIT               int 
+OPSEC_VT_UI8BIT              int 
+OPSEC_VT_I16BIT              int 
+OPSEC_VT_UI16BIT             int 
+OPSEC_VT_I32BIT              int 
+OPSEC_VT_UI32BIT             int 
+OPSEC_VT_I64BIT              64 bits int 
+OPSEC_VT_UI64BIT             64 bits  
+OPSEC_VT_HEX                 int   
+OPSEC_VT_SHORT 
+OPSEC_VT_USHORT         
+OPSEC_VT_STRING              char * 
+OPSEC_VT_ISTRING             char * 
+OPSEC_VT_ACTION              int 
+OPSEC_VT_ALERT               int 
+OPSEC_VT_BUFF                char * 
+OPSEC_VT_DIRECTION     
+OPSEC_VT_DURATION_TIME       int 
+OPSEC_VT_INTERFACE
+OPSEC_VT_IP                  int 
+OPSEC_VT_IP_PROTO            char 
+OPSEC_VT_IPV6                opsec_in6_addr
+OPSEC_VT_LOG                 int 
+OPSEC_VT_MASK                unsigned int 
+OPSEC_VT_PORT                unsigned short 16 bit port number
+OPSEC_VT_NONE                empty value
+OPSEC_VT_PROTO               short 
+OPSEC_VT_RPC_PROG            int
+OPSEC_VT_RULE                int
+OPSEC_VT_SR_HOSTGROUP        char *  
+OPSEC_VT_SR_HOSTNAME         char * 
+OPSEC_VT_SR_SERVICE          char * 
+OPSEC_VT_SR_SERVICEGROUP     char * 
+OPSEC_VT_SR_USERGROUP        char * 
+OPSEC_VT_TIME                int 
+OPSEC_VT_TCP_PORT            short
+OPSEC_VT_UDP_PORT            short 
+OPSEC_VT_UUID opsec_uuid *

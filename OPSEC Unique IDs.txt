@@ -1,0 +1,25 @@
+OPSEC Unique IDs
+
+This section describes each of Unique ID API (UID) functions.
+
+The following functions create, destroy and handle Unique IDs.
+opsec_uuid_create
+opsec_uuid_create creates a new Unique ID. A new UID is created as an 
+“unspecified” UID.
+Prototype
+opsec_uuid *opsec_uuid_create(); 
+
+Return Values
+A pointer to an opsec_uuid upon success, NULL upon failure.
+opsec_uuid_destroy
+opsec_uuid_destroy destroys a previously created Unique ID.
+Prototype
+void opsec_uuid_destroy (opsec_uuid *uuid); 
+
+opsec_uuid_create 
+opsec_uuid_destroy 
+opsec_uuid_duplicate 
+opsec_uuid_set_unspecified 
+opsec_uuid_equal 
+opsec_uuid_to_string 
+opsec_uuid_from_string
